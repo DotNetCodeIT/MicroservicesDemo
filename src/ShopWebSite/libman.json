@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "mdbootstrap@4.11.0",
+      "destination": "wwwroot/lib/mdbootstrap"
+    }
+  ]
+}

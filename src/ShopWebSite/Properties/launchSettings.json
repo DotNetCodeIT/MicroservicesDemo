@@ -1,0 +1,38 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:17131",
+      "sslPort": 44306
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "API_SUPPLIER_ADDRESS": "https://localhost:44388/api/suppliers",
+        "API_PRODUCT_ADDRESS": "https://localhost:44393/api/Products",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "API_CUSTOMER_ADDRESS": "https://localhost:44388/api/suppliers",
+        "API_PRODUCTPRICE_ADDRESS": "https://localhost:44366/api/ProductPrice"
+      }
+    },
+    "ShopWebSite": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}

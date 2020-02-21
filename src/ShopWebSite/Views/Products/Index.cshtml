@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ShopWebSite.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div class="row">
+    @foreach (ShopWebSite.Models.Product product in Model)
+    {
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="@product.ImageUrl" alt="@product.Title">
+            <div class="card-body">
+                <h5 class="card-title">@product.Title</h5>
+                <p class="card-text">@product.Description</p>
+                <a href="#"></a>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@product.ProductId">Edit</a> |
+                <a class="btn btn-primary" asp-action="Details" asp-route-id="@product.ProductId">Details</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@product.ProductId">Delete</a>
+            </div>
+        </div>
+    }
+</div>
+
