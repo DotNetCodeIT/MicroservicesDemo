@@ -15,5 +15,3 @@ jobs:
         dotnet-version: 3.1.2
     - name: Build with dotnet
       run: dotnet build --configuration Release
-    - name: Secret Scan
-      uses: max/secret-scan@1.0.0
